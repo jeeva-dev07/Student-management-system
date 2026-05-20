@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Student Management System</h1>
+
+        <div class="stats-container" id="statsContainer">
+            <div class="stat-card">
+                <h3>Total Students</h3>
+                <p id="totalCount">0</p>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <div class="form-section">
+                <h2 id="formTitle">Add New Student</h2>
+                <form id="studentForm">
+                    <input type="hidden" id="studentId">
+                    
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder="+1234567890">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Course Route</label>
+                        <select id="course" required>
+                            <option value="">-- Select Course --</option>
+                            <option value="Python Core">Python Core</option>
+                            <option value="Full Stack Web">Full Stack Web</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="btn btn-primary">Save Student</button>
+                    <button type="button" id="cancelBtn" class="btn btn-secondary hidden">Cancel Edit</button>
+                </form>
+            </div>
+
+            <div class="table-section">
+                <div class="search-wrapper">
+                    <input type="text" id="searchBar" placeholder="🔍 Search records by name or course...">
+                </div>
+
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Course</th>
+                                <th>Enrolled On</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTableBody">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
