@@ -1,0 +1,12 @@
+1.which module did you own?
+I handled Module 3 and Module 6. 
+Biggest challenge was integrating everyone's work together because each person was working on a different module. We solved it by communicating regularly, testing APIs in Postman, and syncing code through GitHub. If we started again, I'd spend more time on planning the API and database structure before coding. From my teammates, 
+I learned a lot about GitHub collaboration and project integration.
+2. What was the hardest integration challenge and how did the team solve it?
+The hardest integration challenge was ensuring that all modules worked correctly with the shared database structure and authentication system. Sometimes API responses or database fields did not match across modules. The team solved this by discussing the API contracts, reviewing the database schema together,
+and testing all endpoints using Postman before merging the code into the main branch.
+3. What would you build differently if you started again?
+If I started again, I would spend more time designing the API structure and database schema before coding.
+This would reduce integration issues later and make collaboration between team members smoother.
+4. One thing you learned from a teammate during this project.
+I learned how to use GitHub more effectively for team collaboration, including pulling updates, resolving merge conflicts, and keeping my local branch synchronized with the latest project changes. This helped me understand real-world team development workflows.
